@@ -1,6 +1,38 @@
  <!-- Built by Zach Woodward 2023. Questions were taken from the book CLM Rx by Kami Paulsen.  -->
 
 <!DOCTYPE html>
+<img src="https://www.docusign.de/sites/default/files/docusign_clm_horiz_black.png" alt="docusignclm" width="300" style="display: block; margin: 0 auto;">
+
+<style>
+  body {
+    font-family: helvetica, sans-serif;
+    background-color: #292929;
+    color: #f2f2f2;
+    font-size: 18px;
+  }
+  
+  a {
+    color: #d9d9d9;
+  }
+  
+  h1, h2, h3 {
+    color: #f2f2f2;
+  }
+
+  button {
+    border-radius: 8px;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #3e8e41;
+  }
+</style>
+
 <html>
   <head>
     <title>CLM Readiness Score Calculator</title>
@@ -71,9 +103,11 @@
           <input type="radio" name="q9" value="0"> No
         </label>
       </p>
-      <button type="button" onclick="calculateScore()">Calculate Score</button>
+      <button type="button" onclick="calculateScore()">Calculate CLM Readiness Score</button>
     </form>
     <p id="score"></p>
+<br><br><br>
+    by Zach Woodward
    
 <script>
       function calculateScore() {
